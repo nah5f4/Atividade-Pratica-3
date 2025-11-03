@@ -1,3 +1,5 @@
+# Soluções:
+
 def sao_anagramas(string1, string2):
   # Todo: Implementar a lógica
   pass
