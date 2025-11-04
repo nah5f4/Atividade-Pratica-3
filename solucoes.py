@@ -24,6 +24,6 @@ def cifra_de_cesar(texto, deslocamento):
       cifra += caractere
   return cifra
 
-def valida_cpf(cpf_string):
+def encontrar_maior_palavra(frase):
   # Todo: Implementar a lógica
   pass
