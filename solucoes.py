@@ -10,14 +10,13 @@ def cifra_de_cesar(texto, deslocamento):
 
 
 def encontrar_maior_palavra(frase: str) -> str:
-    maio_palavra = ""
-    frase_sem_pontuacao = ""
-    for caractere in frase:
-        if (caractere.lower() >= "a" and caractere.lower() <= "z") or caractere == " ":
-            frase_sem_pontuacao += caractere  # ignora caracteres que não são letras
-
-    palavras = frase_sem_pontuacao.split()  # separa palavras por espaços
+    maior_palavra = ""
+    palavras = frase.split()  # separa palavras por espaços
     for palavra in palavras:
-        if len(palavra) > len(maio_palavra):
-            maio_palavra = palavra
-    return maio_palavra
+        # remove caracteres não alfanuméricos
+        palavra = "".join(filter(str.isalnum, palavra))
+
+        # compara comprimentos
+        if len(palavra) > len(maior_palavra):
+            maior_palavra = palavra
+    return maior_palavra
