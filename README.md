@@ -16,7 +16,7 @@ Este projeto é desenvolvido pela seguinte equipe:
     * *Funcionalidade:* `sao_anagramas()`
 * **Desenvolvedor(a) 2:** `Giovanna Hirata`
     * *Funcionalidade:* `cifra_de_cesar()`
-* **Desenvolvedor(a) 3:** `Diego Hurtado`
+* **Desenvolvedor(a) 3:** `Diego Hurtado de Mendoza`
     * *Funcionalidade:* `encontrar_maior_palavra()`
 
 ##  Funcionalidades Implementadas
