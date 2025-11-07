@@ -14,7 +14,7 @@ def cifra_de_cesar(texto, deslocamento):
   
   cifra = ""
   for caractere in texto:
-    if caractere.isalpha():
+    if caractere.isascii() and  caractere.isalpha():  # correção: verifica se é uma letra e se é ascii, preservando os caracteres do texto que não se encaixem aq (incluindo acentuados)
       char_val = ord(caractere)
       if char_val < 97:
         cifra += chr((char_val - 65 + deslocamento) % 26 + 65)
@@ -27,3 +27,13 @@ def cifra_de_cesar(texto, deslocamento):
 def encontrar_maior_palavra(frase):
   # Todo: Implementar a lógica
   pass
+
+
+
+
+####################### TIRAR DPS
+
+if __name__ == "__main__":
+        txt = input("Digite um texto de entrada: ")
+        d = int(input("Digite um valor de deslocamento: "))
+        print(cifra_de_cesar(txt, d))
