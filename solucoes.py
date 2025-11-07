@@ -27,13 +27,3 @@ def cifra_de_cesar(texto, deslocamento):
 def encontrar_maior_palavra(frase):
   # Todo: Implementar a lógica
   pass
-
-
-
-
-####################### TIRAR DPS
-
-if __name__ == "__main__":
-        txt = input("Digite um texto de entrada: ")
-        d = int(input("Digite um valor de deslocamento: "))
-        print(cifra_de_cesar(txt, d))
